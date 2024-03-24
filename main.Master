@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="DB_Project.main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!--TITLE of the website-->
+    <title>FunFlix</title>
+ 
+     <link rel="icon" href="pictures/newlogo2.png" type="image/icon type"> 
+
+    <!--Stylesheet BOOTSTRAP-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/mainpage.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <!--------------------------------------------------- NAVBAR ---------------------------------------------------->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark" style="color: #000000">
+        
+    <div class="container">
+        
+
+        <!-- BRANDING -->
+        <a href="home2.aspx" class="navbar-brand" style="color: #ad0202;">
+            <img src="pictures/newlogo1.png" width="100px" height="50px" class="d-inline-block align-middle" alt="">
+
+            <div class="content">
+                <h2>FUNFLIX</h2>
+                <h2>FUNFLIX</h2>
+            </div>
+        </a>
+
+        <!--Burger menu icon & Collapse -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- NAVBAR MENU NAVIGATION -->
+        <div class="collapse navbar-collapse" id="nav-menu">
+            <div class="navbar-nav ms-auto">
+
+                <!-- Navigation Pages -->     
+                <a href="home2.aspx" class="nav-link">Home</a>
+                <a href="movies.aspx" class="nav-link">Movies</a>
+                <a href="songs.aspx" class="nav-link">Songs</a>
+               <%-- <a href="games.aspx" class="nav-link">Games</a>--%>   
+                <asp:LinkButton href="games.aspx" Visible="false" ID="game2" runat="server" class="nav-link">Games</asp:LinkButton>
+                <a href="topcontent.aspx" class="nav-link">Top Content</a> 
+                <a href="about.aspx" class="nav-link">About</a>
+                          
+            </div>
+        </div>
+    </div>
+</nav>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+      <!-------------------------------------------------------- FOOTER ----------------------------------------------->
+<div class="container-fluid" style="background-color:#252422; border-color: #252422; border-style: solid; border-width: 3px; margin-top: 50px;">
+    <div class="container" style="margin-top: 08px; margin-bottom: 08px;">
+        <div class="row">
+            <div class="col my-auto">
+                <h6 class="text-light" style = "color: #fffcf2;" >
+                    &copy; FunFlix | 2023  </h6>
+            </div>
+            <div class="col" align="right">
+               <a href="https://www.instagram.com/___.funflix.___/"> <img src="pictures/instaNew.png"  width="34px"> 
+               </a>
+               <a href="https://www.youtube.com/@funflix.02">
+               <img src="pictures/yt.png"  width="34px">
+                </a>
+                
+               <img src="pictures/facebook.png"  width="32px">
+            </div>
+        </div>
+    </div>
+</div>
+    </form>
+</body>
+</html>
