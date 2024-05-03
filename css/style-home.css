@@ -1,0 +1,63 @@
+/*
+Colors: 
+#eb5e28 (red)
+#252422 (dark gray)
+#fffcf2 (bright white)
+#ccc5b9 (Dark white)
+#c70039 red
+#ad9802 (yellow)
+#ffc400ec (yello bright)
+#ff1e00 (Bright Red)
+*/
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #ad200a; */
+
+   background-color: #fffcf2;
+}
+
+.page-link {
+
+    color: #252422;
+    background-color: transparent;
+}
+
+.section-light {
+    background-color: #ccc5b9;
+}
+
+.text-light {
+    color: #fffcf2;
+}
+
+.hr-dark {
+    border-color: #252422;
+    border-style: solid;
+    opacity: 0.2;
+    border-width: 1px;
+}
+
+
+.hr-light {
+    color: #ccc5b9;
+    border-style: solid;
+    opacity: 0.4;
+    border-width: 1px;
+}
+
+::-webkit-scrollbar {
+    background-color: black;
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(105deg, #ff1e00, #ffc400ec, #ffc400ec, #ff1e00);
+    border-radius: 6px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(transparent, #0367fd);
+    }

@@ -1,0 +1,22 @@
+body {
+
+    position: relative;
+    background-image: url(cinema.jpg);
+    /* backdrop-filter: blur(1px) saturate(100%); */
+    background-position: center;
+    background-size: 500px 500px;
+    
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-dark {
+    color: #252422;
+}
+
+.text-orange {
+    color: #eb5e28;
+}
+
+.text-light {
+    color: #FFFCF2;
+}

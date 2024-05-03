@@ -1,0 +1,62 @@
+
+.profile-modal {
+    position: absolute;
+    left: 50%;
+    top: 111%;
+    transform: translate(-50%, -50%);
+    background: black;
+    border-radius: 5px;
+    border: 2px double #2192ff;
+    box-shadow: -4px 4px 12px #000000, 4px -4px 12px #000000;
+}
+
+.profile-modal {
+    display: none;
+}
+
+    .profile-modal .close-icon {
+        position: absolute;
+        margin-top: 1.5%;
+        margin-left: 96%;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+        font-size: 20px;
+        transition: all 0.1s ease-in-out;
+    }
+
+        .profile-modal .close-icon:hover {
+            color: #2192ff;
+        }
+
+    .profile-modal img {
+        border-radius: 50%;
+        width: 35%;
+        min-height: 40vh;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: 3%;
+        /*height: 40vh;*/
+    }
+
+    .profile-modal label {
+        display: grid;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 120%;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #ffc400ec;
+        width: 100%;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+
+    .profile-modal p {
+        margin-left: 15%;
+        margin-top: 3%;
+        padding-bottom: 10%;
+        font-family: 'Montserrat', sans-serif;
+        color: #ad202a;
+        font-size: 103%;
+        font-weight: 600;
+    }

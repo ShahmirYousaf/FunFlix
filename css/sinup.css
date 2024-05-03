@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+    /*font size*/
+    --x-small: 12px;
+    --small: 14px;
+    --medium: 1.6rem;
+    --large: 2.4rem;
+    --x-large: 3.2rem;
+    /*colors*/
+    --white: #fff;
+    --blue: rgb(13, 76, 146);
+    --blue-2: #0f3460;
+    --blue-neon: #2192ff;
+    --sky-blue: #59c1bd;
+    --green-light: #a0e4cb;
+    --sky-blue-light: #cff5e7;
+    --dark-blue: #112b3c;
+    --red: #ff1e00;
+    /*radius*/
+    --radius-5: 5px;
+    --radius-10: 10px;
+    --radius-15: 15px;
+    --radius-20: 20px;
+    /*width*/
+    --width: 350px;
+    /*shadow*/
+    --shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* --shadow-2: 0px 0px 10px rgba(89, 193, 189, 0.1); */
+    --shadow-2: 0px 0px 15px rgb(13 76 146 / 10%);
+}
+
+::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+
+/* html,
+body{
+  font-size: 10px;
+} */
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 2%;
+    padding-top: 1%;
+    background: #252422;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    /* align-items: center;
+  justify-content: center; */
+}
+
+
+
+
+
+
+
+
+.sinup {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.sinup {
+    display: flex;
+}
+
+.sinup-h {
+    position: absolute;
+    top: -180px;
+    left: -500px;
+    width: 650px;
+    color: #ffc400ec;
+}
+
+.sinup-form {
+    position: absolute;
+    width: 1000px;
+    height: 400px;
+    padding: 30px;
+    top: 70px;
+    left: -10px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    background: #ffc400ec;
+    backdrop-filter: blur(100%) saturate(180%);
+    /* background-image: url(logo_TRA_p.png); */
+    background-position: 55%;
+    background-size: 50% 70%;
+    border: rgba(0, 0, 0, 0.9);
+    border-style: solid;
+}
+
+    .sinup-form .fie-1 {
+        position: relative;
+        top: 0px;
+        padding-left: -100px;
+    }
+
+        .sinup-form .fie-1 input[type="text"],
+        .sinup-form .fie-1 input[type="password"],
+        .sinup-form .fie-1 input[type="tel"],
+        .sinup-form .fie-1 .input-package {
+            border: 0;
+            background-color: white;
+            /* backdrop-filter: blur(5px) saturate(180%); */
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: solid #ad202a;
+            margin-left: 10px;
+            width: 350px;
+            height: 50px;
+            outline: none;
+            color: #000000;
+            border-radius: 24px;
+            letter-spacing: 2px;
+            font-weight: 300;
+            transition: 0.25s;
+        }
+
+            .sinup-form .fie-1 input[type="text"]:focus,
+            .sinup-form .fie-1 input[type="password"]:focus,
+            .sinup-form .fie-1 input[type="tel"]:focus,
+            .sinup-form .fie-1 .input-package:focus {
+                width: 400px;
+                border-color: #ad202a;
+                background-color: transparent;
+                backdrop-filter: blur(10px) saturate(180%);
+                font-size: 20px;
+            }
+
+    .sinup-form .fie-2 {
+        position: absolute;
+        top: 30px;
+        right: 0px;
+        padding-left: -100px;
+    }
+
+        .sinup-form .fie-2 input[type="text"],
+        .sinup-form .fie-2 input[type="date"],
+        .sinup-form .fie-2 input[type="email"],
+        .sinup-form .fie-2 .gender {
+            border: 0;
+            background-color: white;
+            /* backdrop-filter: blur(5px) saturate(180%); */
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: solid #ad202a;
+            margin-right: 10px;
+            width: 350px;
+            height: 50px;
+            outline: none;
+            color: #000000;
+            border-radius: 24px;
+            letter-spacing: 2px;
+            font-weight: 300;
+            transition: 0.25s;
+        }
+
+            .sinup-form .fie-2 input[type="text"]:focus,
+            .sinup-form .fie-2 input[type="date"]:focus,
+            .sinup-form .fie-2 input[type="email"]:focus,
+            .sinup-form .fie-2 .gender:focus {
+                width: 400px;
+                border-color: #ad202a;
+                background-color: transparent;
+                backdrop-filter: blur(10px) saturate(180%);
+                font-size: 20px;
+            }
+
+.sinup1 {
+    position: absolute;
+    margin-top: 55%;
+    margin-left: 51%;
+    width: 1000px;
+    height: 300px;
+    top: 70px;
+    left: -10px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    background: #ffc400ec;
+    backdrop-filter: blur(100%) saturate(180%);
+    /* background-image: url(logo_TRA_p.png); */
+    background-position: 55%;
+    background-size: 50% 70%;
+    border: rgba(0, 0, 0, 0.9);
+    border-style: solid;
+}
+
+    .sinup1 h1 {
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+
+.sinup-form .fie-3 {
+    position: relative;
+    top: 0px;
+    padding-left: -100px;
+}
+
+    .sinup-form .fie-3 .creditnumber,
+    .sinup-form .fie-3 .cvc,
+    .sinup-form .fie-3 .input-card {
+        border: 0;
+        background-color: white;
+        /* backdrop-filter: blur(5px) saturate(180%); */
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: solid #ad202a;
+        margin-left: 10px;
+        width: 350px;
+        height: 50px;
+        outline: none;
+        color: #000000;
+        border-radius: 24px;
+        letter-spacing: 2px;
+        font-weight: 300;
+        transition: 0.25s;
+    }
+
+        .sinup-form .fie-3 .creditnumber:focus,
+        .sinup-form .fie-3 .cvc:focus,
+        .sinup-form .fie-3 .input-card:focus {
+            width: 400px;
+            border-color: #ad202a;
+            background-color: transparent;
+            backdrop-filter: blur(10px) saturate(180%);
+            font-size: 20px;
+        }
+
+.sinup-form .fie-4 {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    padding-left: -100px;
+}
+
+    .sinup-form .fie-4 .cardOwner,
+    .sinup-form .fie-4 .cardExpiry {
+        border: 0;
+        background-color: white;
+        /* backdrop-filter: blur(5px) saturate(180%); */
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: solid #ad202a;
+        margin-right: 10px;
+        width: 350px;
+        height: 50px;
+        outline: none;
+        color: #000000;
+        border-radius: 24px;
+        letter-spacing: 2px;
+        font-weight: 300;
+        transition: 0.25s;
+    }
+
+        .sinup-form .fie-4 .cardOwner:focus,
+        .sinup-form .fie-4 .cardExpiry:focus {
+            width: 400px;
+            border-color: #ad202a;
+            background-color: transparent;
+            backdrop-filter: blur(10px) saturate(180%);
+            font-size: 20px;
+        }
+
+.sinup-btn {
+    position: absolute;
+    left: 72.5%;
+    top: 173%;
+    width: 180px;
+    height: 50px;
+    border: 0;
+    background-color: #ad202a;
+    display: block;
+    text-align: center;
+    border: solid #000000;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+    color: #000000;
+    cursor: pointer;
+}
+
+    .sinup-btn:hover {
+        background: #ffc400ec;
+        border: solid #000000;
+        left: 71.5%;
+        width: 200px;
+    }
+
+::-webkit-scrollbar {
+    background-color: black;
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(105deg, #ff1e00, #ffc400ec, #ffc400ec, #ff1e00);
+    border-radius: 6px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(transparent, #0367fd);
+    }

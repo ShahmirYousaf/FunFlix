@@ -1,0 +1,42 @@
+body {
+    /*Background Color of the Page*/
+    background-color: #2B2940;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hr-light 
+{
+  color: #ccc5b9;
+  border-style: solid;
+  opacity: 0.4;
+  border-width: 1px;
+  margin: 70px 0px;
+}
+
+/* h1{
+
+  font-family:'Times New Roman', Times, serif ;
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+}
+.col-md-2{
+  background-color:#252422;
+}
+
+h5{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+} */
+.col-md-4{
+  background-color:#EB5E28
+}
+/* h2{
+  font-family: 'Times New Roman', Times, serif;
+ 
+}
+h3{
+
+  font-family:'Times New Roman', Times, serif ;
+} */

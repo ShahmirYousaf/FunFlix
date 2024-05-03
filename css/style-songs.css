@@ -1,0 +1,9 @@
+body {
+    /*Background Color of the Page*/
+    /* background-color: #00ff6aec;
+    background-image: url(msc.png); */
+     background: black;
+   /* background-image: url(musicBG.jpg);*/
+    background-size: 80%;
+    font-family: 'Montserrat', sans-serif;
+}

@@ -1,0 +1,24 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #ad200a; */
+    /*background-color: #000000;*/
+   /* background: linear-gradient(105deg, #000000, #393737, #000000);*/
+    background-image: url(about-bg.jpg);
+}
+
+
+::-webkit-scrollbar {
+    background-color: black;
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(105deg, #ff1e00, #ffc400ec, #ffc400ec, #ff1e00);
+    border-radius: 6px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(transparent, #0367fd);
+    }
+

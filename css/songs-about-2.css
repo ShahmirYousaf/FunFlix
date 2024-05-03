@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+
+
+
+
+
+::-webkit-scrollbar {
+    background-color: black;
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(105deg, #ff1e00, #ffc400ec, #ffc400ec, #ff1e00);
+    border-radius: 6px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(transparent, #0367fd);
+    }
+
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.35s ease-in-out;
+}
+
+body {
+    background-color: black;
+    background-size: cover;
+}
+
+
+
+.container4 {
+    position: absolute;
+    top: 270px;
+    left: 35px;
+    width: 440px;
+    height: 80px;
+    cursor: pointer;
+    transition: all 1s ease-out;
+}
+
+    .container4 img {
+        margin-left: -5%;
+        margin-top: -2%;
+        width: 20%;
+        height: 80%;
+    }
+
+    .container4 audio {
+        margin-top: -10%;
+        width: 130%;
+    }
+
+    .container4 #progress {
+        -webkit-appearance: none;
+        width: 380px;
+        height: 8px;
+        background: #FF1E00;
+        overflow: hidden;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 15%;
+        margin-top: -10%;
+    }
+
+        .container4 #progress::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            /*            background: #ffc400ec;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 10px solid #ff1e00;*/
+            width: 1px;
+            height: 20px;
+            box-shadow: -400px 0 0 400px #FFC813;
+            ;
+        }
+
+    .container4 .current-time,
+    .container4 .song-duration {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .container4 .song-duration {
+        position: absolute;
+        left: 47%;
+        top: 35%;
+    }
+
+    .container4 .current-time {
+        margin-left: -30%;
+        margin-top: -10%;
+    }
+
+.container1 {
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: -20%;
+}
+
+.container2 {
+    height: 55vh;
+    display: grid;
+    grid-template-columns: 480px 1fr;
+    grid-gap: 32px;
+    background: rgb(93, 93, 93);
+    backdrop-filter: blur(12px) contrast(80%);
+    color: black;
+    border: solid transparent;
+    border-width: 5px;
+    border-radius: 50px;
+}
+
+.info {
+    padding-top: 24px;
+    padding-left: 24px;
+}
+
+.poster {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 480px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+    .poster img {
+        width: 480px;
+        border: solid transparent;
+        border-radius: 50px;
+        object-fit: cover;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+    }
+
+        .poster img:hover {
+            transform: scale(1.05) rotateZ(0deg);
+        }
+
+.info > div {
+    margin-top: -12px;
+    margin-bottom: 32px;
+    margin-right: 32px;
+}
+
+.movie-title {
+    font-size: 54px;
+    font-weight: bold;
+    background-image: linear-gradient(45deg, #000000ec, #ff1e00);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.movie-detail .set {
+    display: inline-block;
+    margin-right: 64px;
+}
+
+.movie-detail label {
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #000000;
+    display: block;
+}
+
+.movie-detail .span {
+    font-size: 18px;
+    margin-left: 2%;
+    color: aqua;
+}
+
+.movie-cast .img {
+    width: 12%;
+    height: 120%;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 2px solid #cccccc;
+    transition: all 1s ease-in-out;
+}
+
+.movie-cast:hover .img {
+    border-width: 0px;
+    transform: scale(1.1) rotateZ(-2deg);
+    box-shadow: -1px 1px 3px #ad0202, 1px -1px 3px #ff1e00;
+}
+
+.movie-cast .label {
+    margin-left: 15%;
+    margin-top: -9%;
+    font-weight: 600;
+    display: block;
+    transition: all 1s ease-in-out;
+}
+
+.movie-cast:hover .label {
+    letter-spacing: 1px;
+    color: #871000;
+}

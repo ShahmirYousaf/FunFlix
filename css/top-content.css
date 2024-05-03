@@ -1,0 +1,326 @@
+.container-1 {
+    background: #0d122c; /*  ye background color hai   */
+    padding-top: 10%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 10%;
+    display: flex;
+    flex: wrap;
+}
+
+
+/*      Movie Section     */
+
+.box-1{
+    position: relative;
+    width: 35%;
+    height: 210vh;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.box-1::before,
+.box-1::after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(315deg, #00ccff, #d400d4);
+    inset: -80px 100px;
+    transition: 0.5s;
+    filter: hue-rotate(calc(var(--i) * 120deg));
+    animation: animate2 8s linear infinite;
+}
+
+    .box-1::after {
+        background: linear-gradient(315deg, #ffeb3b, #e91e63);
+        filter: hue-rotate(calc(var(--i) * 120deg));
+        animation-delay: -2s;
+    }
+
+    .box-1:hover::before,
+    .box-1:hover::after {
+        animation-play-state: paused;
+        inset: -80px 80px;
+    }
+
+@keyframes animate2{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.movie-container {
+    position: absolute;
+    /*inset: 20px;*/
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-size: cover;
+    border-radius: 10px;
+    border: 7px solid #0d122c; /* jo background ka color ho */
+    width: 99%;
+    height: 99.5%;
+    padding-left: 0.5%;
+    background: black; /*  movie container color  */
+}
+
+    .movie-container h1 {
+        font-family: 'Montserrat', sans-serif;
+        color: #ffe100; /*  font color  */
+        font-weight: 900;
+        font-size: 300%;
+        padding-top: 2%;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+.TopMovies {
+    display: flex;
+    flex: wrap;
+    padding-top: 5%;
+    margin-left: 2%;
+}
+
+.TopMoviesItem{
+    padding-bottom: 3%;
+}
+
+.topmovie-pic {
+    width: 17%;
+}
+
+.topmovie-name {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffe100; /*   name kai color   */
+    border-radius: 50px;
+    font-size: 130%;
+    font-weight: 600;
+    padding-left: 1%;
+}
+
+
+
+
+
+
+
+/*      Songs Section     */
+
+.box-2 {
+    position: relative;
+    width: 35%;
+    height: 210vh;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 2%;
+}
+
+    .box-2::before,
+    .box-2::after {
+        content: '';
+        position: absolute;
+        background: linear-gradient(315deg, #00ccff, #d400d4);
+        inset: -80px 100px;
+        transition: 0.5s;
+        filter: hue-rotate(calc(var(--i) * 120deg));
+        animation: animate3 8s linear infinite;
+    }
+
+    .box-2::after {
+        background: linear-gradient(315deg, #ffeb3b, #e91e63);
+        filter: hue-rotate(calc(var(--i) * 120deg));
+        animation-delay: -2s;
+    }
+
+    .box-2:hover::before,
+    .box-2:hover::after {
+        animation-play-state: paused;
+        inset: -80px 80px;
+    }
+
+@keyframes animate3 {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.song-container {
+    position: absolute;
+    /*inset: 20px;*/
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-size: cover;
+    border-radius: 10px;
+    border: 7px solid #0d122c; /* jo background ka color ho */
+    width: 99%;
+    height: 99.5%;
+    padding-left: 0.5%;
+    background: black; /*  movie container color  */
+}
+
+    .song-container h1 {
+        font-family: 'Montserrat', sans-serif;
+        color: #6FBAEB; /*  font color  */
+        font-weight: 900;
+        font-size: 300%;
+        padding-top: 2%;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+.TopSongs {
+    display: flex;
+    flex: wrap;
+    padding-top: 5%;
+    margin-left: 2%;
+}
+
+.TopSongsItem {
+    padding-bottom: 3%;
+}
+
+.topsong-pic {
+    width: 17%;
+}
+
+.topsong-name {
+    font-family: 'Montserrat', sans-serif;
+    color: #6FBAEB; /*   name kai color   */
+    border-radius: 50px;
+    font-size: 130%;
+    font-weight: 600;
+    padding-left: 1%;
+}
+
+
+
+
+
+
+
+/*      Game Section     */
+
+.box-3 {
+    position: relative;
+    width: 35%;
+    height: 210vh;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 2%;
+}
+
+    .box-3::before,
+    .box-3::after {
+        content: '';
+        position: absolute;
+        background: linear-gradient(315deg, #00ccff, #d400d4);
+        inset: -80px 100px;
+        transition: 0.5s;
+        filter: hue-rotate(calc(var(--i) * 120deg));
+        animation: animate4 8s linear infinite;
+    }
+
+    .box-3::after {
+        background: linear-gradient(315deg, #ffeb3b, #e91e63);
+        filter: hue-rotate(calc(var(--i) * 120deg));
+        animation-delay: -2s;
+    }
+
+    .box-3:hover::before,
+    .box-3:hover::after {
+        animation-play-state: paused;
+        inset: -80px 80px;
+    }
+
+@keyframes animate4 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.game-container {
+    position: absolute;
+    /*inset: 20px;*/
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-size: cover;
+    border-radius: 10px;
+    border: 7px solid #0d122c; /* jo background ka color ho */
+    width: 99%;
+    height: 99.5%;
+    padding-left: 0.5%;
+    background: black; /*  movie container color  */
+}
+
+    .game-container h1 {
+        font-family: 'Montserrat', sans-serif;
+        /*color: mediumaquamarine;*/ /*  font color  */
+        color:#ad0202;
+        font-weight: 900;
+        font-size: 300%;
+        padding-top: 2%;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+.TopGames {
+    display: flex;
+    flex: wrap;
+    padding-top: 5%;
+    margin-left: 2%;
+}
+
+.TopGamesItem {
+    padding-bottom: 3%;
+}
+
+.topgame-pic {
+    width: 17%;
+}
+
+.topgame-name {
+    font-family: 'Montserrat', sans-serif;
+    /*color: #ffe100;*/ /*   name kai color   */
+    color: #ad0202;
+    border-radius: 50px;
+    font-size: 130%;
+    font-weight: 600;
+    padding-left: 1%;
+}

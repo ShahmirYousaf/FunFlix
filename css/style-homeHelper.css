@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+
+ 
+
+
+.movie-pic {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 250px;
+    border: #ffc400ec;
+    border-style: solid;
+    border-radius: 90px;
+    border-width: 5px;
+    /* background: rgba(201, 49, 49, 0.603); */
+    background: #ad200a;
+    backdrop-filter: blur(4px) saturate(180%);
+    background-image: url(movie.png);
+    background-position: center;
+    background-size: 230px 230px;
+    position: relative;
+    animation-name: movie-pic-ani;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+    transition: background-size 1s;
+}
+
+@keyframes movie-pic-ani {
+    from {
+        top: 50px;
+        border-radius: 0px;
+        border: rgba(201, 49, 49, 0.603);
+        background-color: #ffc400ec;
+    }
+
+    to {
+        /* top: 200px;
+        border-radius: 90px; */
+        top: 0px;
+        border-radius: 90px;
+    }
+}
+
+.movie-pic:hover{
+    background-size: 250px 250px;
+}
+
+.games-pic {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 250px;
+    height: 250px;
+    border: #ad200a;
+    border-style: solid;
+    border-radius: 90px;
+    border-width: 5px;
+    background-color: #ffc400ec;
+    backdrop-filter: blur(4px) saturate(180%);
+    background-image: url(gamesPic.png);
+    background-position: center;
+    background-size: 240px 240px;
+    position: relative;
+    /* backdrop-filter: blur(100px) saturate(180%); */
+    position: relative;
+    animation-name: games-pic-ani;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+    transition: background-size 1s;
+}
+
+@keyframes games-pic-ani {
+    from {
+        top: 100px;
+        border-radius: 0px;
+        border: #ffc400ec;
+        background-color: #ad200a;
+    }
+
+    to {
+        top: 50px;
+        border-radius: 90px;
+    }
+}
+
+.games-pic:hover{
+    background-size: 250px 250px;
+}
+
+.songs-pic {
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    width: 250px;
+    height: 250px;
+    border: #ffc400ec;
+    border-style: solid;
+    border-radius: 90px;
+    border-width: 5px;
+    /* background: rgba(201, 49, 49, 0.603); */
+    background: #ad200a;
+    backdrop-filter: blur(4px) saturate(180%);
+    background-image: url(msc.png);
+    background-position: center;
+    background-size: 260px 260px;
+    position: relative;
+    /* backdrop-filter: blur(100px) saturate(180%); */
+    position: relative;
+    animation-name: songs-pic-ani;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+    transition: background-size 1s;
+}
+
+@keyframes songs-pic-ani {
+    from {
+        top: 50px;
+        border-radius: 0px;
+        border: rgba(201, 49, 49, 0.603);
+        background-color: #ffc400ec;
+    }
+
+    to {
+        top: 00px;
+        border-radius: 90px;
+    }
+}
+
+.songs-pic:hover{
+    background-size: 250px 250px;
+}

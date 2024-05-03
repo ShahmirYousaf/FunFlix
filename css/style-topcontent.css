@@ -1,0 +1,14 @@
+body {
+
+    /*Background Color of the Page*/
+    background-color: #ad202a;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hr-light {
+    color: #ccc5b9;
+    border-style: solid;
+    opacity: 0.4;
+    border-width: 1px;
+    margin: 40px 0px;
+}

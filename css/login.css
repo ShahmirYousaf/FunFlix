@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+    /*font size*/
+    --x-small: 12px;
+    --small: 14px;
+    --medium: 1.6rem;
+    --large: 2.4rem;
+    --x-large: 3.2rem;
+    /*colors*/
+    --white: #fff;
+    --blue: rgb(13, 76, 146);
+    --blue-2: #0f3460;
+    --blue-neon: #2192ff;
+    --sky-blue: #59c1bd;
+    --green-light: #a0e4cb;
+    --sky-blue-light: #cff5e7;
+    --dark-blue: #112b3c;
+    --red: #ff1e00;
+    /*radius*/
+    --radius-5: 5px;
+    --radius-10: 10px;
+    --radius-15: 15px;
+    --radius-20: 20px;
+    /*width*/
+    --width: 350px;
+    /*shadow*/
+    --shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* --shadow-2: 0px 0px 10px rgba(89, 193, 189, 0.1); */
+    --shadow-2: 0px 0px 15px rgb(13 76 146 / 10%);
+}
+
+::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+
+/* html,
+body{
+  font-size: 10px;
+} */
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 2%;
+    padding-top: 1%;
+    background: #252422;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    /* align-items: center;
+  justify-content: center; */
+}
+
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    background-color: black;
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(105deg, #ff1e00, #ffc400ec, #ffc400ec, #ff1e00);
+    border-radius: 6px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(transparent, #0367fd);
+    }
+
+
+
+
+
+
+
+
+
+
+.modal {
+    display: flex;
+}
+
+    .modal .close-icon {
+        position: absolute;
+        margin-top: -164px;
+        margin-left: 250px;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+        font-size: 20px;
+        transition: color 0.1s ease;
+    }
+
+        .modal .close-icon:hover {
+            color: #ffc400ec;
+            font-size: 23px;
+        }
+
+
+
+.login-form {
+    width: 500px;
+    padding: 30px;
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ad202a;
+    backdrop-filter: blur(4px) saturate(180%);
+    /* background-image: url(logo_TRA_p.png); */
+    background-position: center;
+    background-size: 80% 100%;
+    text-align: center;
+    border: rgba(0, 0, 0, 0.9);
+    border-style: solid;
+}
+
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+        border: 0;
+        background-color: none;
+        /* backdrop-filter: blur(5px) saturate(180%); */
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: solid #000000;
+        padding: 14px 10px;
+        width: 270px;
+        outline: none;
+        color: #000000;
+        border-radius: 24px;
+        transition: 0.25s;
+    }
+
+        .login-form input[type="text"]:focus,
+        .login-form input[type="password"]:focus {
+            width: 300px;
+            border-color: #ffc400ec;
+            background-color: transparent;
+            backdrop-filter: blur(10px) saturate(180%);
+            font-size: large;
+        }
+
+    .login-form .login-btn {
+        border: 0;
+        background-color: #ffc400ec;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: solid #000000;
+        padding: 14px 35px;
+        outline: none;
+        color: #000000;
+        border-radius: 22px;
+        cursor: pointer;
+        transition: 0.25s;
+    }
+
+        .login-form .login-btn:hover {
+            background: #ad202a;
+            border: solid #000000;
+            width: 145px;
+        }
+
