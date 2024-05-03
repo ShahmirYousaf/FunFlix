@@ -1,6 +1,5 @@
 # FunFlix
 
-![FunFlix Logo](pictures/logo.png)
 
 Welcome to FunFlix, your ultimate destination for entertainment! FunFlix is an innovative entertainment website designed to provide users with a wide range of options to enjoy their leisure time. From movies and songs to games and more, FunFlix has something for everyone.
 
